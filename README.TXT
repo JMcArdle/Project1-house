@@ -2,7 +2,7 @@ Project "house"
 Authors: Joshua McArdle
 Date: 9/14/15
 
-I am recreating World 1-1 from Super Mario Bros. 
+I am recreating Porygon-2 from Pokemon with its trainer holding a Pokeball.  
 
 This project is part of the material for the book
 
