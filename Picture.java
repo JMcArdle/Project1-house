@@ -30,29 +30,43 @@ public class Picture
     public void draw()
     {
         wall = new Square();
-        wall.moveHorizontal(-140);
-        wall.moveVertical(20);
-        wall.changeSize(120);
+        wall.moveHorizontal(-400);
+        wall.changeColor("blue");
+        wall.moveVertical(100);
+        wall.changeSize(1000);
         wall.makeVisible();
         
-        window = new Square();
-        window.changeColor("black");
-        window.moveHorizontal(-120);
-        window.moveVertical(40);
-        window.changeSize(40);
-        window.makeVisible();
-
         roof = new Triangle();  
-        roof.changeSize(60, 180);
+        roof.changeSize(150, 300);
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+        roof = new Triangle();  
+        roof.changeSize(150, 300);
+        roof.moveHorizontal(50);
+        roof.moveVertical(-60);
+        roof.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("red");
+        sun.moveHorizontal(-100);
+        sun.moveVertical(-40);
+        sun.changeSize(60);
+        sun.makeVisible();
+        
+        sun = new Circle();
+        sun.changeColor("blue");
+        sun.moveHorizontal(0);
+        sun.moveVertical(-60);
+        sun.changeSize(60);
+        sun.makeVisible();
 
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
         sun.moveVertical(-40);
-        sun.changeSize(80);
+        sun.changeSize(60);
         sun.makeVisible();
     }
 
@@ -77,7 +91,7 @@ public class Picture
     {
         if (wall != null)   // only if it's painted already...
         {
-            wall.changeColor("red");
+            wall.changeColor("blue");
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
