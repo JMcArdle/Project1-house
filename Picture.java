@@ -15,6 +15,10 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Circle sun2;
+    private Circle sun3;
+    private Person resident;
+    private Person resident2;
 
     /**
      * Constructor for objects of class Picture
@@ -29,6 +33,22 @@ public class Picture
      */
     public void draw()
     {
+        
+        resident = new Person();
+        resident.changeColor("black");
+        resident.changeSize(50, 70);
+        resident.moveHorizontal(150);
+        resident.moveVertical(0);
+        resident.makeVisible();
+        
+        resident2 = new Person();
+        resident2.changeColor("red");
+        resident2.changeSize(50, 70);
+        resident2.moveHorizontal(-210);
+        resident2.moveVertical(0);
+        resident2.makeVisible();
+        
+        
         wall = new Square();
         wall.moveHorizontal(-400);
         wall.changeColor("blue");
@@ -50,24 +70,24 @@ public class Picture
         
         sun = new Circle();
         sun.changeColor("red");
-        sun.moveHorizontal(-100);
+        sun.moveHorizontal(-125);
         sun.moveVertical(-40);
         sun.changeSize(60);
         sun.makeVisible();
         
-        sun = new Circle();
-        sun.changeColor("blue");
-        sun.moveHorizontal(0);
-        sun.moveVertical(-60);
-        sun.changeSize(60);
-        sun.makeVisible();
+        sun2 = new Circle();
+        sun2.changeColor("blue");
+        sun2.moveHorizontal(-5);
+        sun2.moveVertical(-90);
+        sun2.changeSize(60);
+        sun2.makeVisible();
 
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(60);
-        sun.makeVisible();
+        sun3 = new Circle();
+        sun3.changeColor("yellow");
+        sun3.moveHorizontal(100);
+        sun3.moveVertical(-40);
+        sun3.changeSize(60);
+        sun3.makeVisible();
     }
 
     /**
@@ -81,6 +101,10 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            sun2.changeColor("black");
+            sun3.changeColor("black");
+            resident.changeColor("black");
+            resident2.changeColor("black");
         }
     }
 
@@ -95,6 +119,10 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+            sun2.changeColor("blue");
+            sun3.changeColor("red");
+            resident.changeColor("black");
+            resident2.changeColor("red");
         }
     }
 }

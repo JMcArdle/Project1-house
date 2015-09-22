@@ -2,7 +2,8 @@ Project "house"
 Authors: Joshua McArdle
 Date: 9/14/15
 
-I am recreating Porygon-2 from Pokemon with its trainer holding a Pokeball.  
+I am creating an island with three different colored suns and two residents of different colors, 
+standing on water. 
 
 This project is part of the material for the book
 
